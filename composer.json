@@ -1,0 +1,24 @@
+{
+    "name": "funct/funct",
+    "description": "A PHP library with commonly used code blocks",
+    "authors": [
+        {
+            "name": "Aurimas Niekis",
+            "email": "aurimas.niekis@gmail.com"
+        }
+    ],
+    "type": "library",
+    "license": "MIT",
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Funct\\": "src"
+        },
+        "files": [
+            "src/loader.php"
+        ]
+    }
+}
