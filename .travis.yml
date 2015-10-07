@@ -1,22 +1,20 @@
 language: php
 
-sudo: false
-
-cache:
-  directories:
-    - $HOME/.composer/cache
-
 php:
   - 5.5
   - 5.6
   - 7.0
   - hhvm
 
-matrix:
-  fast_finish: true
+install:
+  - composer require satooshi/php-coveralls
 
 before_script:
-    - composer install
+  - mkdir -p build/logs
+  - composer install
 
-git:
-  depth: 5
+script:
+  - phpunit
+
+after_success:
+  - vendor/bin/coveralls -v
