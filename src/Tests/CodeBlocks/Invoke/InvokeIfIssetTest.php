@@ -5,6 +5,12 @@ namespace Funct\Tests\CodeBlocks\Invoke;
 use Funct\CodeBlocks as Funct;
 use Funct\Tests\Fixtures\SampleObject;
 
+/**
+ * Class InvokeIfIssetTest
+ *
+ * @package Funct\Tests\CodeBlocks\Invoke
+ * @author Aurimas Niekis <${AUTHOR}>
+ */
 class InvokeIfIssetTest extends \PHPUnit_Framework_TestCase
 {
     public function testInvokeIf()

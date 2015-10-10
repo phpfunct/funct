@@ -10,7 +10,7 @@ use ArrayAccess;
  * @param object|string $object An object or class name for static method calling
  * @param string $methodName A method name to call
  * @param array|ArrayAccess $values Values
- * @param scalar $key
+ * @param mixed $key
  *
  * @return mixed
  */

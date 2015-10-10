@@ -4,6 +4,12 @@ namespace Funct\Tests\CodeBlocks\Invoke;
 
 use Funct\CodeBlocks as Funct;
 
+/**
+ * Class InvokeIfTest
+ *
+ * @package Funct\Tests\CodeBlocks\Invoke
+ * @author Aurimas Niekis <aurimas.niekis@gmail.com>
+ */
 class InvokeIfTest extends \PHPUnit_Framework_TestCase
 {
     protected $callbackWasCalled;
