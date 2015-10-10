@@ -3,7 +3,12 @@
 call_user_func(function () {
     static $functions = [
         'CodeBlocks\\Invoke\\invoke_if',
-        'CodeBlocks\\Invoke\\invoke_if_isset'
+        'CodeBlocks\\Invoke\\invoke_if_isset',
+
+
+        'CodeBlocks\\String\\string_camelize',
+        'CodeBlocks\\String\\string_lower_case_first',
+        'CodeBlocks\\String\\string_upper_case_first',
     ];
 
     static $basePath = __DIR__;
