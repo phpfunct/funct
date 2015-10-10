@@ -2,11 +2,13 @@
 
 call_user_func(function () {
     static $functions = [
+        'CodeBlocks\\Invoke\\invoke_if',
+        'CodeBlocks\\Invoke\\invoke_if_isset'
+
         'CodeBlocks\\Collection\\collection_first',
         'CodeBlocks\\Collection\\collection_last',
         'CodeBlocks\\Collection\\collection_first_n',
         'CodeBlocks\\Collection\\collection_last_n',
-        'CodeBlocks\\Invoke\\invoke_if'
     ];
 
     static $basePath = __DIR__;
