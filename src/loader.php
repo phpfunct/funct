@@ -5,6 +5,8 @@ call_user_func(function () {
         'CodeBlocks\\Invoke\\invoke_if',
         'CodeBlocks\\Invoke\\invoke_if_isset',
 
+        'CodeBlocks\\not_empty',
+
         'CodeBlocks\\Collection\\collection_first',
         'CodeBlocks\\Collection\\collection_last',
         'CodeBlocks\\Collection\\collection_first_n',
