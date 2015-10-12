@@ -7,7 +7,9 @@ call_user_func(function () {
         'CodeBlocks\\Invoke\\invoke_if_not_empty',
 
         'CodeBlocks\\not_empty',
+
         'CodeBlocks\\first_value',
+        'CodeBlocks\\first_value_not_empty',
 
         'CodeBlocks\\Collection\\collection_first',
         'CodeBlocks\\Collection\\collection_last',
