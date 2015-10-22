@@ -8,6 +8,9 @@ call_user_func(function () {
 
         'CodeBlocks\\not_empty',
         'CodeBlocks\\not_null',
+        'CodeBlocks\\null',
+        'CodeBlocks\\false',
+        'CodeBlocks\\true',
 
         'CodeBlocks\\first_value',
         'CodeBlocks\\first_value_not_empty',

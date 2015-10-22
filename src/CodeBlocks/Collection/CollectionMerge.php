@@ -5,6 +5,9 @@ namespace Funct\CodeBlocks;
 /**
  * collection_merge function
  *
+ * @param $a
+ * @param $b
+ *
  * @author Aurimas Niekis <aurimas.niekis@gmail.com>
  */
 function collection_merge(&$a, $b)
