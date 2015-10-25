@@ -21,6 +21,7 @@ call_user_func(function () {
         'CodeBlocks\\Collection\\collection_last_n',
         'CodeBlocks\\Collection\\collection_for_every',
         'CodeBlocks\\Collection\\collection_merge',
+        'CodeBlocks\\Collection\\collection_get',
 
         'CodeBlocks\\String\\string_camelize',
         'CodeBlocks\\String\\string_lower_case_first',
