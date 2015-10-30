@@ -12,6 +12,8 @@ call_user_func(function () {
         'CodeBlocks\\false',
         'CodeBlocks\\true',
 
+        'CodeBlocks\\temp_file',
+
         'CodeBlocks\\first_value',
         'CodeBlocks\\first_value_not_empty',
 
