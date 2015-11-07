@@ -2,11 +2,13 @@
 
 namespace Funct\CodeBlocks;
 
+use Traversable;
+
 /**
  * collection_merge function
  *
- * @param $a
- * @param $b
+ * @param array|Traversable $a
+ * @param array|Traversable $b
  *
  * @author Aurimas Niekis <aurimas.niekis@gmail.com>
  */

@@ -2,10 +2,10 @@
 
 namespace Funct\CodeBlocks;
 
-use Traversible;
+use Traversable;
 
 /**
- * @param array|Traversible $collection
+ * @param array|Traversable $collection
  * @param int $n First n elements of array
  *
  * @return array

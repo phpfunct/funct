@@ -25,6 +25,8 @@ call_user_func(function () {
         'CodeBlocks\\Collection\\collection_merge',
         'CodeBlocks\\Collection\\collection_get',
 
+        'CodeBlocks\\Objects\\objects_to_array',
+
         'CodeBlocks\\String\\string_camelize',
         'CodeBlocks\\String\\string_lower_case_first',
         'CodeBlocks\\String\\string_upper_case_first',
