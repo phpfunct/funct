@@ -6,6 +6,7 @@ call_user_func(function () {
         'CodeBlocks\\Invoke\\invoke_if_isset',
         'CodeBlocks\\Invoke\\invoke_if_not_empty',
 
+        'CodeBlocks\\not_in_array',
         'CodeBlocks\\not_empty',
         'CodeBlocks\\not_null',
         'CodeBlocks\\null',
