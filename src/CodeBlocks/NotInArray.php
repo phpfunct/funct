@@ -2,6 +2,8 @@
 
 namespace Funct\CodeBlocks;
 
+use Funct\CodeBlocks as Funct;
+
 /**
  * Checks if needle is not in array
  *
@@ -14,5 +16,5 @@ namespace Funct\CodeBlocks;
  */
 function not_in_array($needle, $haystack, $strict = null)
 {
-    return false(in_array($needle, $haystack, $strict));
+    return Funct\false(in_array($needle, $haystack, $strict));
 }
