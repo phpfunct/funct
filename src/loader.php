@@ -32,6 +32,7 @@ call_user_func(function () {
         'CodeBlocks\\String\\string_lower_case_first',
         'CodeBlocks\\String\\string_upper_case_first',
         'CodeBlocks\\String\\string_is_lower',
+        'CodeBlocks\\String\\string_is_upper',
     ];
 
     static $basePath = __DIR__;
