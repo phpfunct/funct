@@ -12,6 +12,7 @@ call_user_func(function () {
         'CodeBlocks\\false',
         'CodeBlocks\\true',
         'CodeBlocks\\not_in_array',
+        'CodeBlocks\\array_key_not_exists',
 
         'CodeBlocks\\temp_file',
 
