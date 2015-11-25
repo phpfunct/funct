@@ -13,7 +13,7 @@ namespace Funct\CodeBlocks;
  *
  * @author Lucantis Swann <lucantis.swann@gmail.com>
  */
-function string_truncate($input, $length, $chars = '&hellip;')
+function string_truncate($input, $length, $chars = '…')
 {
 	$splits = preg_split('/([\s\n\r]+)/u', $input, null, PREG_SPLIT_DELIM_CAPTURE);
 
