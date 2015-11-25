@@ -2,8 +2,6 @@
 
 namespace Funct\CodeBlocks;
 
-require_once('stringStartsWith.php');
-
 /**
  * Removes prefix from start of string
  *

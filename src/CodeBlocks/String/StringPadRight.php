@@ -15,5 +15,5 @@ namespace Funct\CodeBlocks;
  */
 function string_pad_right($input, $lenght, $char = ' ')
 {
-	return str_pad($input, $lenght, $char)
+	return str_pad($input, $lenght, $char, STR_PAD_RIGHT);
 }

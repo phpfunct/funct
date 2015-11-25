@@ -2,8 +2,6 @@
 
 namespace Funct\CodeBlocks;
 
-require_once('stringEndsWith.php');
-
 /**
  * Removes suffix from end of string
  *
