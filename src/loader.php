@@ -42,7 +42,7 @@ call_user_func(function () {
         'CodeBlocks\\String\\string_count',
         'CodeBlocks\\String\\string_ends_with',
         'CodeBlocks\\String\\string_include',
-        'CodeBlocks\\String\\string_is_alphanumeric',
+        'CodeBlocks\\String\\string_is_alpha_numeric',
         'CodeBlocks\\String\\string_is_alpha',
         'CodeBlocks\\String\\string_is_numeric',
         'CodeBlocks\\String\\string_latinize',
