@@ -14,9 +14,9 @@ namespace Funct\CodeBlocks;
  */
 function string_chomp_right($input, $suffix)
 {
-    if (string_ends_with($input, $sufix)) {
+    if (string_ends_with($input, $suffix)) {
 
-        return mb_substr($input, 0, mb_strlen($input) - mb_strlen($sufix));
+        return mb_substr($input, 0, mb_strlen($input) - mb_strlen($suffix));
     }
 
     return $input;
