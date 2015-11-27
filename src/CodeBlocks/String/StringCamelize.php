@@ -6,7 +6,7 @@ namespace Funct\CodeBlocks;
  * Camelizes string
  *
  * @param string $input
- * @param bool $firstLetterUppercase
+ * @param bool   $firstLetterUppercase
  *
  * @return string
  *

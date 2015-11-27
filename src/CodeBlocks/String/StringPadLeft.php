@@ -7,7 +7,7 @@ namespace Funct\CodeBlocks;
  *
  * @param string $input
  * @param string $lenght
- * @param char 	 $char
+ * @param string $char
  *
  * @return string
  *
@@ -15,5 +15,5 @@ namespace Funct\CodeBlocks;
  */
 function string_pad_left($input, $lenght, $char = ' ')
 {
-	return str_pad($input, $lenght, $char, STR_PAD_LEFT);
+    return str_pad($input, $lenght, $char, STR_PAD_LEFT);
 }

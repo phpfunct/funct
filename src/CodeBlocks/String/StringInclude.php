@@ -3,7 +3,7 @@
 namespace Funct\CodeBlocks;
 
 /**
- * Alias of string_contains 
+ * Alias of string_contains
  *
  * @param string $input
  * @param string $substring

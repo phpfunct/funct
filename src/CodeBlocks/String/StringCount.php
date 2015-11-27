@@ -14,5 +14,5 @@ namespace Funct\CodeBlocks;
  */
 function string_count($input, $substring)
 {
-	return mb_substr_count($input, $substring);
+    return mb_substr_count($input, $substring);
 }

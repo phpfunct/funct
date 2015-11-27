@@ -6,7 +6,8 @@ namespace Funct\CodeBlocks;
  * Checks if letters in given string are all uppercase.
  *
  * @param string $input
- * @param bool $mb
+ * @param bool   $mb
+ *
  * @return bool
  *
  * @author Ernestas Kvedaras <kvedaras.ernestas@gmail.com>
