@@ -14,7 +14,7 @@ namespace Funct\CodeBlocks;
  */
 function collection_some($collection, callable $callback = null)
 {
-    if (null($callback)) {
+    if (null === $callback) {
         $callback = function ($item) use ($callback) {
             return (true == $item);
         };

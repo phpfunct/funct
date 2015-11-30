@@ -14,6 +14,6 @@ namespace Funct\CodeBlocks;
 function collection_reject($collection, callable $callback)
 {
     return array_filter($collection, function ($item) use ($callback) {
-        return false(call_user_func($callback, $item));
+        return false === call_user_func($callback, $item);
     });
 }

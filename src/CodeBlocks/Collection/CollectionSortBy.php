@@ -14,7 +14,7 @@ namespace Funct\CodeBlocks;
  */
 function collection_sort_by($collection, $sortBy, $sortFunction = 'asort')
 {
-    if (false(is_callable($sortBy))) {
+    if (false === is_callable($sortBy)) {
         $sortBy = function ($item) use ($sortBy) {
             return $item[$sortBy];
         };
