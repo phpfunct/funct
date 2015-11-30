@@ -21,7 +21,7 @@ function objects_to_array($objects, $valueMethod, $keyMethod = null)
 
     foreach ($objects as $object) {
         $value = call_user_func([$object, $valueMethod]);
-        if (not_null($keyMethod)) {
+        if (null !== $keyMethod) {
             $key = call_user_func([$object, $keyMethod]);
 
             $results[$key] = $value;
