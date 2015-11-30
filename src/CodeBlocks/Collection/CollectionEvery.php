@@ -24,7 +24,7 @@ function collection_every($collection, callable $callback = null)
                array_filter(
                    $collection,
                    function ($item) use ($callback) {
-                       return false(call_user_func($callback, $item));
+                       return false === call_user_func($callback, $item);
                    }
                )
            ) < 1;
