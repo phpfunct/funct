@@ -78,6 +78,19 @@ call_user_func(function () {
         'CodeBlocks\\String\\string_starts_with',
         'CodeBlocks\\String\\string_times',
         'CodeBlocks\\String\\string_truncate',
+        'CodeBlocks\\String\\string_left',
+        'CodeBlocks\\String\\string_lines',
+        'CodeBlocks\\String\\string_pad',
+        'CodeBlocks\\String\\string_right',
+        'CodeBlocks\\String\\string_strip',
+        'CodeBlocks\\String\\string_slugify',
+        'CodeBlocks\\String\\string_strip_punctuation',
+        'CodeBlocks\\String\\string_classify',
+        'CodeBlocks\\String\\string_to_sentence',
+        'CodeBlocks\\String\\string_to_sentence_serial',
+        'CodeBlocks\\String\\string_titleize',
+        'CodeBlocks\\String\\string_underscore',
+        'CodeBlocks\\String\\string_dasherize',
     ];
 
     static $basePath = __DIR__;

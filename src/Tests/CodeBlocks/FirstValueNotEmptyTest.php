@@ -8,8 +8,8 @@ use Funct\CodeBlocks as Funct;
  * Class FirstValueNotEmptyTest
  *
  * @package Funct\Tests\CodeBlocks
- * @author Aurimas Niekis <aurimas.niekis@gmail.com>
-*/
+ * @author  Aurimas Niekis <aurimas.niekis@gmail.com>
+ */
 class FirstValueNotEmptyTest extends \PHPUnit_Framework_TestCase
 {
     public function dataFirstValueNotEmpty()
@@ -31,13 +31,18 @@ class FirstValueNotEmptyTest extends \PHPUnit_Framework_TestCase
             'bar'
         ];
 
+        $out[] = [
+            ['', '', ''],
+            null
+        ];
+
         return $out;
     }
 
     /**
      * @dataProvider dataFirstValueNotEmpty
      *
-     * @param array $arguments
+     * @param array  $arguments
      * @param string $expected
      */
     public function testFirstValueNotEmpty($arguments, $expected)

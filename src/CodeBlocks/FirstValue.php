@@ -7,7 +7,7 @@ namespace Funct\CodeBlocks;
  *
  * @author Aurimas Niekis <aurimas.niekis@gmail.com>
  */
-function first_value($valueA, $valueB)
+function first_value($valueA)
 {
     foreach (func_get_args() as $arg) {
         if (null !== $arg) {
