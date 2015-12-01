@@ -8,8 +8,8 @@ use Funct\CodeBlocks as Funct;
  * Class FirstValueTest
  *
  * @package Funct\Tests\CodeBlocks
- * @author Aurimas Niekis <aurimas.niekis@gmail.com>
-*/
+ * @author  Aurimas Niekis <aurimas.niekis@gmail.com>
+ */
 class FirstValueTest extends \PHPUnit_Framework_TestCase
 {
     public function dataFirstValue()
@@ -31,13 +31,18 @@ class FirstValueTest extends \PHPUnit_Framework_TestCase
             'bar'
         ];
 
+        $out[] = [
+            [null],
+            null
+        ];
+
         return $out;
     }
 
     /**
      * @dataProvider dataFirstValue
      *
-     * @param array $arguments
+     * @param array  $arguments
      * @param string $expected
      */
     public function testFirstValue($arguments, $expected)
