@@ -677,7 +677,7 @@ Strings\between('<a><a>foo</a></a>', '<a>', '</a>'); // => '<a>foo'
 Strings\between('<a>foo', '<a>', '</a>'); // => ''
 Strings\between('Some strings } are very {weird}, dont you think?', '{', '}'); // => 'weird'
 Strings\between('This is a test string', 'test'); // => ' string'
-Strings\between('This is a test string', '', 'test') // => 'This is a '
+Strings\between('This is a test string', '', 'test'); // => 'This is a '
 ```
 
 ### camelize($input, $firstLetterUppercase = false)
