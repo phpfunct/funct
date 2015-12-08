@@ -653,3 +653,16 @@ function zip($collectionFirst, $collectionSecond)
 {
     return unzip(func_get_args());
 }
+
+/**
+ * Returns a reversed array
+ * @param  array  $collection
+ * @param  boolean $preserveNumericKeys
+ * @return array
+ * @author Rod Elias <rod@wgo.com.br>
+ */
+function reverse($collection, $preserveNumericKeys = false)
+{
+    return array_reverse($collection, $preserveNumericKeys);
+}
+
