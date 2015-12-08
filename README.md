@@ -599,7 +599,7 @@ Collection\some([null, 0, 'yes', false]); // => true
 Returns a sorted array by callback function which should return value to which sort
 
 ```PHP
-Collection\sortBy([1, 2, 3, 4, 5, 6], function ($num) { return sin(num); }); // => [5, 4, 6, 3, 1, 2]
+Collection\sortBy([1, 2, 3, 4, 5, 6], function ($num) { return sin($num); }); // => [5, 4, 6, 3, 1, 2]
 ```
 
 
