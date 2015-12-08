@@ -72,6 +72,7 @@ Funct\firstValueNotEmpty($a, $b, $c)
         * [where](#wherecollection-value)
         * [without](#withoutcollection-without)
         * [zip](#zipcollectionfirst-collectionsecond)
+        * [reverse](#reversecollection-preserveNumericKeys)
     * [String](#string)
         * [between](#betweeninput-left-right)
         * [camelize](#camelizeinput-firstletteruppercase--false)
@@ -663,6 +664,18 @@ Merges together the values of each of the arrays with the values at the correspo
 
 ```PHP
 Collection\zip(['moe', 'larry', 'curly'], [30, 40, 50], [true, false, false]); // => [["moe", 30, true], ["larry", 40, false], ["curly", 50, false]]
+```
+
+### reverse($collection, $preserveNumericKeys)
+
+Reverses an array.
+
+```PHP
+Collection\reverse(['a', 'b', 'c']); // ['c', 'b', 'a']
+
+Collection\reverse(['php', 7.0, ['green', 'red']], true); // [2 => [0 => 'green', 1 => 'red'], 1 => 7.0, 0 => 'php']
+
+
 ```
 
 ## String
