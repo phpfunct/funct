@@ -875,3 +875,13 @@ function upperCaseFirst($input)
     return ucfirst($input);
 }
 
+/**
+ * Reverses a string
+ * @param  string $input
+ * @return string
+ * @author Rod Elias <rod@wgo.com.br>
+ */
+function reverse($input)
+{
+	return strrev($input);
+}
