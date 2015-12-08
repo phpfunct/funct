@@ -108,6 +108,7 @@ Funct\firstValueNotEmpty($a, $b, $c)
         * [truncate](#truncateinput-length-chars--)
         * [underscore](#underscorestring)
         * [upperCaseFirst](#uppercasefirstinput)
+        * [reverse](#reverse)
     * [Invoke](#invoke)
         * [ifCondition](#ifissetcallable-callable-values-key)
         * [ifIsset](#ifissetcallable-callable-values-key)
@@ -1029,6 +1030,13 @@ Converts string first char to uppercase
 Strings\upperCaseFirst('helloWorld'); // => 'HelloWorld
 ```
 
+### reverse($input)
+
+Reverses a string
+
+```PHP
+Strings\reverse('hello world'); // => dlrow olleh
+```
 
 ## Invoke
 
