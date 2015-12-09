@@ -16,10 +16,10 @@ class StringsLengthTest extends \PHPUnit_Framework_TestCase
     {
         $out = [];
 
-        $out[] = ['rod', '3'];
-        $out[] = ['foobar', '6'];
-
-        $out[] = function_exists('mb_strlen') ? ['marçal', '6'] : ['marçal', 7];
+        $out[] = ['rod', true, 3];
+        $out[] = ['rod', false, 3];
+        $out[] = ['marçal', true, 6];
+        $out[] = ['marçal', false, 7];
 
         return $out;
     }
@@ -30,8 +30,8 @@ class StringsLengthTest extends \PHPUnit_Framework_TestCase
      * @param string $input
      * @param string $expected
      */
-    public function testStringLength($input, $expected)
+    public function testStringLength($input, $mb, $expected)
     {
-        $this->assertEquals($expected, Strings\Length($input));
+        $this->assertEquals($expected, Strings\Length($input, $mb));
     }
 }
