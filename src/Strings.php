@@ -645,6 +645,18 @@ function repeat($input, $n)
 }
 
 /**
+ * Reverses a string
+ * @param  string $input
+ * @return string
+ * @author Rod Elias <rod@wgo.com.br>
+ */
+function reverse($input)
+{
+    return strrev($input);
+}
+
+
+/**
  * Return the substring denoted by n positive right-most characters
  *
  * @param string $string
