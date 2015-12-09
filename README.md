@@ -64,6 +64,7 @@ Funct\firstValueNotEmpty($a, $b, $c)
         * [pluck](#pluckcollection-key)
         * [reject](#rejectcollection-callable-callback)
         * [rest](#restcollection-from--1)
+        * [reverse](#reversecollection-preservenumerickeys)
         * [some](#somecollection-callable-callback--null)
         * [sortBy](#sortbycollection-sortby-sortfunction--asort)
         * [tail](#tailcollection-from--1)
@@ -584,6 +585,18 @@ Returns the rest of the elements in an array. Pass an from to return the values 
 ```PHP
 Collection\rest([5, 4, 3, 2, 1]); // => [4, 3, 2, 1]
 ```
+
+### reverse($collection, $preserveNumericKeys)
+
+Reverses an array.
+
+```PHP
+Collection\reverse(['a', 'b', 'c']); // ['c', 'b', 'a']
+
+Collection\reverse(['php', 7.0, ['green', 'red']], true); // [2 => [0 => 'green', 1 => 'red'], 1 => 7.0, 0 => 'php']
+
+```
+
 
 ### some($collection, callable $callback = null)
 
