@@ -92,6 +92,7 @@ Funct\firstValueNotEmpty($a, $b, $c)
         * [isUpper](#isupperinput-mb--false)
         * [latinize](#latinizeinput)
         * [left](#leftstring-n)
+        * [length](#lengthstring)
         * [lines](#linesstring)
         * [lowerCaseFirst](#lowercasefirstinput)
         * [pad](#padstring-lenght-char---)
@@ -868,6 +869,14 @@ Return the substring denoted by n positive left-most characters
 Strings\left('My name is AN', 2); // => 'My'
 Strings\left('Hi', 0); // => ''
 Strings\left('My name is AN', -2); // => 'AN', same as right(2)
+```
+
+### length($string)
+
+Get string length.
+
+```PHP
+Strings\length('rod'); // 3
 ```
 
 ### lines($string)
