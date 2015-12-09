@@ -301,11 +301,11 @@ Collection\countBy(
 ); // => [1, 2, 3]
 Collection\countBy(
     [
-        ['color' => 'red', title => 'Foo'],
-        ['color' => 'red', title => 'Foo'],
-        ['color' => 'red', title => 'Foo'],
-        ['color' => 'blue', title => 'Bar'],
-        ['color' => 'blue', title => 'Bar']
+        ['color' => 'red', 'title' => 'Foo'],
+        ['color' => 'red', 'title' => 'Foo'],
+        ['color' => 'red', 'title' => 'Foo'],
+        ['color' => 'blue', 'title' => 'Bar'],
+        ['color' => 'blue', 'title' => 'Bar']
     ],
     'color'
 ); // => ['red' => 3, 'blue => 2]
