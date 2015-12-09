@@ -97,6 +97,7 @@ Funct\firstValueNotEmpty($a, $b, $c)
         * [padLeft](#padleftinput-lenght-char---)
         * [padRight](#padrightinput-length-char---)
         * [repeat](#repeatinput-n)
+        * [reverse](#reverseinput)
         * [right](#rightstring-n)
         * [slugify](#slugifystring)
         * [startsWith](#startswithinput-substring)
@@ -915,6 +916,15 @@ Strings\padRight('hello', 10, '.'); // => 'hello.....'
 ### repeat($input, $n)
 
 Alias times($input, $n)
+
+
+### reverse($input)
+
+Reverses a string
+
+```PHP
+Strings\reverse('hello world'); // => dlrow olleh
+```
 
 ### right($string, $n)
 
