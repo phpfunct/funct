@@ -472,7 +472,6 @@ function reject($collection, callable $callback)
     });
 }
 
-
 /**
  * Returns the rest of the elements in an array. Pass an from to return the values of the array from that index onward.
  *
@@ -487,6 +486,17 @@ function rest($collection, $from = 1)
     return array_slice($collection, $from);
 }
 
+/**
+ * Returns a reversed array
+ * @param  array  $collection
+ * @param  boolean $preserveNumericKeys
+ * @return array
+ * @author Rod Elias <rod@wgo.com.br>
+ */
+function reverse($collection, $preserveNumericKeys = false)
+{
+    return array_reverse($collection, $preserveNumericKeys);
+}
 
 /**
  * Returns true if any of the values in the array pass the callback truth test.
