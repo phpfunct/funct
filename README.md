@@ -92,6 +92,7 @@ Funct\firstValueNotEmpty($a, $b, $c)
         * [isUpper](#isupperinput-mb--false)
         * [latinize](#latinizeinput)
         * [left](#leftstring-n)
+        * [len](#leninput-mb--false)
         * [length](#lengthinput-mb--false)
         * [lines](#linesstring)
         * [lowerCaseFirst](#lowercasefirstinput)
@@ -870,6 +871,11 @@ Strings\left('My name is AN', 2); // => 'My'
 Strings\left('Hi', 0); // => ''
 Strings\left('My name is AN', -2); // => 'AN', same as right(2)
 ```
+
+### len($input, $mb = false)
+
+Alias of length($input, $mb = false);
+
 
 ### length($input, $mb = false)
 
