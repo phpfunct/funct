@@ -549,6 +549,18 @@ function left($string, $n)
     return substr($string, $start, $n);
 }
 
+/**
+ * Return the length of a string
+ * @param  string $string the input string
+ * @param bool $mb to use or not to use mb_strlen
+ * @return int         the length of the input string
+ * @author Rod Elias <rod@wgo.com.br>
+ */
+function length($string, $mb = false)
+{
+
+    return $mb ? mb_strlen($string) : strlen($string);
+}
 
 /**
  * Returns an array with the lines. Cross-platform compatible
