@@ -94,8 +94,8 @@ Funct\firstValueNotEmpty($a, $b, $c)
         * [left](#leftstring-n)
         * [lines](#linesstring)
         * [lowerCaseFirst](#lowercasefirstinput)
-        * [pad](#padstring-lenght-char---)
-        * [padLeft](#padleftinput-lenght-char---)
+        * [pad](#padstring-length-char---)
+        * [padLeft](#padleftinput-length-char---)
         * [padRight](#padrightinput-length-char---)
         * [repeat](#repeatinput-n)
         * [reverse](#reverseinput)
@@ -889,7 +889,7 @@ Converts string first char to lowercase
 Strings\lowerCaseFirst('HelloWorld'); // => 'helloWorld
 ```
 
-### pad($string, $lenght, $char = ' ')
+### pad($string, $length, $char = ' ')
 
 Pads the string in the center with specified character. char may be a string or a number, defaults is a space
 
@@ -902,7 +902,7 @@ Strings\pad('hey', 4); // ' hey'
 Strings\pad('hey', 7, '-');// '--hey--'
 ```
 
-### padLeft($input, $lenght, $char = ' ')
+### padLeft($input, $length, $char = ' ')
 
 Left pads the string
 
