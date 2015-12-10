@@ -556,6 +556,18 @@ function left($string, $n)
  * @return int         the length of the input string
  * @author Rod Elias <rod@wgo.com.br>
  */
+function len($string, $mb = false)
+{
+    return length($string, $mb);
+}
+
+/**
+ * Return the length of a string
+ * @param  string $string the input string
+ * @param bool $mb to use or not to use mb_strlen
+ * @return int         the length of the input string
+ * @author Rod Elias <rod@wgo.com.br>
+ */
 function length($string, $mb = false)
 {
 
