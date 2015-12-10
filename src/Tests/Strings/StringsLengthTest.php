@@ -18,8 +18,6 @@ class StringsLengthTest extends \PHPUnit_Framework_TestCase
 
         $out[] = ['rod', true, 3];
         $out[] = ['rod', false, 3];
-        $out[] = ['marçal', true, 6];
-        $out[] = ['marçal', false, 7];
 
         return $out;
     }
