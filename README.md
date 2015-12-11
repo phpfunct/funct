@@ -766,7 +766,7 @@ Strings\countOccurrences('funfunfun', "fun"); // => 3
 
 ### dasherize($string)
 
-Converts hyphens and camel casing to underscores
+Converts hyphens and camel casing to dashes
 
 ```PHP
 Strings\dasherize('dataRate'); // => 'data-rate'
