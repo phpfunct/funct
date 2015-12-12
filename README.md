@@ -1007,8 +1007,8 @@ Strings\stripPunctuation('My, st[ring] *full* of %punct)'); // => 'My string ful
 Repeat the string n times
 
 ```PHP
-Strings\times(' '); // => '     '
-Strings\times('*'); // => '***'
+Strings\times(' ', 3); // => '   '
+Strings\times('*', 3); // => '***'
 ```
 
 ### titleize($string, array $ignore = [])
