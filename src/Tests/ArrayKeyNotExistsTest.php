@@ -16,6 +16,9 @@ class ArrayKeyNotExistsTest extends \PHPUnit_Framework_TestCase
     {
         $given = ['a' => 1, 'b' => 2, 'c' => 3];
 
+        $this->assertNotNull(Funct\arrayKeyNotExists('c', $given));
+        $this->assertNotNull(Funct\arrayKeyNotExists('d', $given));
+
         $this->assertTrue(Funct\arrayKeyNotExists('d', $given));
         $this->assertFalse(Funct\arrayKeyNotExists('c', $given));
     }
