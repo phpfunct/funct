@@ -516,7 +516,13 @@ function some($collection, callable $callback = null)
         };
     }
 
-    return count(array_filter($collection, $callback)) > 0;
+    foreach ($collection as $item) {
+        if (call_user_func($callback, $item)) {
+            return true;
+        }
+    }
+
+    return false;
 }
 
 
