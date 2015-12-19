@@ -17,6 +17,17 @@ function compact($collection)
     return array_filter($collection);
 }
 
+/**
+ * Count all elements in a collection
+ * @param  array  $collection     collection
+ * @param  boolean $countRecursive count or not to count recursively
+ * @return int                  number of elements in a collection
+ * @author Rod Elias <rod@wgo.com.br>
+ */
+function count($collection, $countRecursive = false)
+{
+    return \count($collection, $countRecursive);
+}
 
 /**
  * Sorts a array into groups and returns a count for the number of objects in each group. Similar to groupBy, but
