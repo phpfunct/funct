@@ -40,6 +40,7 @@ Funct\firstValueNotEmpty($a, $b, $c)
         * [true](#truevalue)
     * [Collection](#collection)
         * [compact](#compactcollection)
+        * [count](#countcollection-countRecursive)
         * [countBy](#countbycollection-callback)
         * [every](#everycollection-callable-callback--null)
         * [findWhere](#findwherecollection-value)
@@ -289,6 +290,14 @@ Returns a copy of the array with all falsy values removed
 Collection\compact([0, 1, false, 2, '', 3]); // => [1, 2, 3]
 ```
 
+### count($collection, $countRecursive)
+
+Count all elements in a collection
+
+```PHP
+Collection\count(['a', 'b', 'c']); // 3
+Collection\count(['a', 'b', 'c', ['d', 'e']], true); // 6
+```
 
 ### countBy($collection, $callback)
 
