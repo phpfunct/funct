@@ -292,7 +292,8 @@ Collection\compact([0, 1, false, 2, '', 3]); // => [1, 2, 3]
 
 ### countBy($collection, $callback)
 
-Sorts a array into groups and returns a count for the number of objects in each group. Similar to groupBy, but
+Sorts a array into groups and returns a count for the number of objects in each group. Similar to groupBy, but instead of
+returning a array of values, returns a count for the number of values in that group
 
 ```PHP
 Collection\countBy(
@@ -300,7 +301,7 @@ Collection\countBy(
 	function ($value) {
 		return $value % 2 == 0 ? 'even': 'odd'; 
 	}
-); // => [1, 2, 3]
+); // => ['odd' => 3, 'even' => 2]
 Collection\countBy(
     [
         ['color' => 'red', 'title' => 'Foo'],
