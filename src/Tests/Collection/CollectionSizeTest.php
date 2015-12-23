@@ -5,14 +5,14 @@ namespace Funct\Tests\Collection;
 use Funct\Collection;
 
 /**
- * Class CollectionCountTest
+ * Class CollectionSizeTest
  *
  * @package Funct\Tests\Collection
  * @author  Rod Elias <rod@wgo.com.br>
  */
-class CollectionCountTest extends \PHPUnit_Framework_TestCase
+class CollectionSizeTest extends \PHPUnit_Framework_TestCase
 {
-    public function dataCollectionCount()
+    public function dataCollectionSize()
     {
         $out = [];
 	 	$out[] = [['a', 'b', 'c'], false, 3];
@@ -26,11 +26,11 @@ class CollectionCountTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @dataProvider dataCollectionCount
+     * @dataProvider dataCollectionSize
      *
      */
-    public function testCollectionCount($given, $mode, $expected)
+    public function testCollectionSize($given, $mode, $expected)
     {
-        $this->assertEquals($expected, Collection\count($given, $mode));
+        $this->assertEquals($expected, Collection\size($given, $mode));
     }
 }

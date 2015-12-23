@@ -40,7 +40,6 @@ Funct\firstValueNotEmpty($a, $b, $c)
         * [true](#truevalue)
     * [Collection](#collection)
         * [compact](#compactcollection)
-        * [count](#countcollection-countrecursive)
         * [countBy](#countbycollection-callback)
         * [every](#everycollection-callable-callback--null)
         * [findWhere](#findwherecollection-value)
@@ -66,6 +65,7 @@ Funct\firstValueNotEmpty($a, $b, $c)
         * [reject](#rejectcollection-callable-callback)
         * [rest](#restcollection-from--1)
         * [reverse](#reversecollection-preservenumerickeys)
+        * [size](#sizecollection-countrecursive)
         * [some](#somecollection-callable-callback--null)
         * [sortBy](#sortbycollection-sortby-sortfunction--asort)
         * [tail](#tailcollection-from--1)
@@ -290,14 +290,7 @@ Returns a copy of the array with all falsy values removed
 Collection\compact([0, 1, false, 2, '', 3]); // => [1, 2, 3]
 ```
 
-### count($collection, $countRecursive)
 
-Count all elements in a collection
-
-```PHP
-Collection\count(['a', 'b', 'c']); // 3
-Collection\count(['a', 'b', 'c', ['d', 'e']], true); // 6
-```
 
 ### countBy($collection, $callback)
 
@@ -607,6 +600,15 @@ Collection\reverse(['a', 'b', 'c']); // ['c', 'b', 'a']
 
 Collection\reverse(['php', 7.0, ['green', 'red']], true); // [2 => [0 => 'green', 1 => 'red'], 1 => 7.0, 0 => 'php']
 
+```
+
+### size($collection, $countRecursive)
+
+Computes the size of a collection, i.e., count all elements in a collection
+
+```PHP
+Collection\size(['a', 'b', 'c']); // 3
+Collection\size(['a', 'b', 'c', ['d', 'e']], true); // 6
 ```
 
 

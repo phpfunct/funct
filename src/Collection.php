@@ -18,18 +18,6 @@ function compact($collection)
 }
 
 /**
- * Count all elements in a collection
- * @param  array  $collection     collection
- * @param  boolean $countRecursive count or not to count recursively
- * @return int                  number of elements in a collection
- * @author Rod Elias <rod@wgo.com.br>
- */
-function count($collection, $countRecursive = false)
-{
-    return \count($collection, $countRecursive);
-}
-
-/**
  * Sorts a array into groups and returns a count for the number of objects in each group. Similar to groupBy, but
  * instead of returning a array of values, returns a count for the number of values in that group.
  *
@@ -107,7 +95,6 @@ function findWhere($collection, $value)
     }
 }
 
-
 /**
  * @param array|Traversable $collection
  *
@@ -117,7 +104,6 @@ function first($collection)
 {
     return reset($collection);
 }
-
 
 /**
  * @param array|Traversable $collection
@@ -129,7 +115,6 @@ function firstN($collection, $n = 1)
 {
     return array_slice($collection, 0, $n);
 }
-
 
 /**
  * Flattens a nested array by depth.
@@ -154,7 +139,6 @@ function flatten($collection, $depth = 1)
 
     return $result;
 }
-
 
 /**
  * Flattens all arrays to single level
@@ -466,7 +450,6 @@ function pluck($collection, $key)
     );
 }
 
-
 /**
  * Returns the values in array without the elements that the truth test callback passes. The opposite of array_filter.
  *
@@ -507,6 +490,18 @@ function rest($collection, $from = 1)
 function reverse($collection, $preserveNumericKeys = false)
 {
     return array_reverse($collection, $preserveNumericKeys);
+}
+
+/**
+ * Computes the size of a collection
+ * @param  array  $collection     collection
+ * @param  boolean $countRecursive count or not to count recursively
+ * @return int                  number of elements in a collection
+ * @author Rod Elias <rod@wgo.com.br>
+ */
+function size($collection, $countRecursive = false)
+{
+    return \count($collection, $countRecursive);
 }
 
 /**
