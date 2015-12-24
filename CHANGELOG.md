@@ -4,6 +4,20 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [1.2.0] - 2015-12-24
+### Added
+- Collection\size from [chapeupreto]
+
+### Changed
+- Funct\ArrayKeyNotExists additional test cases from [Newman101]
+- String\truncate optimization from [Newman101]
+- Collection\some optimization from [zhikiri]
+
+### Fixed
+- Readme file from [dfridrich]
+- Readme file from [chapeupreto]
+- PSR-2 code fix from [gcds]
+
 ## [1.1.0] - 2015-12-11
 ### Added
 - Strings\reverse from [chapeupreto]
@@ -23,10 +37,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 [gcds]: https://github.com/gcds
 [hansott]: https://github.com/hansott
+[zhikiri]: https://github.com/zhikiri
+[dfridrich]: https://github.com/dfridrich
+[Newman101]: https://github.com/Newman101
 [chapeupreto]: https://github.com/chapeupreto
 
 
-[Unreleased]: https://github.com/phpfunct/funct/compare/1.1.0...HEAD
+[Unreleased]: https://github.com/phpfunct/funct/compare/1.2.0...HEAD
+[1.2.0]: https://github.com/phpfunct/funct/compare/1.1.0...1.2.0
 [1.1.0]: https://github.com/phpfunct/funct/compare/1.0.0...1.1.0
 [1.0.0]: https://github.com/phpfunct/funct/compare/0.2.0...1.0.0
 [0.2.0]: https://github.com/phpfunct/funct/compare/0.1.0...0.2.0

@@ -424,8 +424,10 @@ function left($string, $n)
 
 /**
  * Return the length of a string
+ *
  * @param  string $string the input string
- * @param bool $mb to use or not to use mb_strlen
+ * @param bool    $mb     to use or not to use mb_strlen
+ *
  * @return int         the length of the input string
  * @author Rod Elias <rod@wgo.com.br>
  */
@@ -436,8 +438,10 @@ function len($string, $mb = false)
 
 /**
  * Return the length of a string
+ *
  * @param  string $string the input string
- * @param bool $mb to use or not to use mb_strlen
+ * @param bool    $mb     to use or not to use mb_strlen
+ *
  * @return int         the length of the input string
  * @author Rod Elias <rod@wgo.com.br>
  */
@@ -543,7 +547,9 @@ function repeat($input, $n)
 
 /**
  * Reverses a string
+ *
  * @param  string $input
+ *
  * @return string
  * @author Rod Elias <rod@wgo.com.br>
  */
@@ -741,17 +747,17 @@ function truncate($input, $length, $chars = '…')
     if (strlen($input) > $length) {
         $splits = preg_split('/([\s\n\r]+)/u', $input, null, PREG_SPLIT_DELIM_CAPTURE);
 
-        $splits_length = 0;
-        $splits_count = count($splits);
+        $splitsLength = 0;
+        $splitsCount  = count($splits);
 
-        for ($last_split = 0; $last_split < $splits_count; ++$last_split) {
-            $splits_length += strlen($splits[$last_split]);
-            if ($splits_length > $length) {
+        for ($lastSplit = 0; $lastSplit < $splitsCount; ++$lastSplit) {
+            $splitsLength += strlen($splits[$lastSplit]);
+            if ($splitsLength > $length) {
                 break;
             }
         }
 
-        return implode(array_slice($splits, 0, $last_split)) . $chars;
+        return implode(array_slice($splits, 0, $lastSplit)) . $chars;
     } else {
         return $input;
     }
