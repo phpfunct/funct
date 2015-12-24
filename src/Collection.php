@@ -65,13 +65,13 @@ function every($collection, callable $callback = null)
     }
 
     return count(
-               array_filter(
-                   $collection,
-                   function ($item) use ($callback) {
-                       return false === call_user_func($callback, $item);
-                   }
-               )
-           ) < 1;
+        array_filter(
+            $collection,
+            function ($item) use ($callback) {
+                return false === call_user_func($callback, $item);
+            }
+        )
+    ) < 1;
 }
 
 
@@ -482,8 +482,10 @@ function rest($collection, $from = 1)
 
 /**
  * Returns a reversed array
- * @param  array  $collection
+ *
+ * @param  array   $collection
  * @param  boolean $preserveNumericKeys
+ *
  * @return array
  * @author Rod Elias <rod@wgo.com.br>
  */
@@ -494,8 +496,10 @@ function reverse($collection, $preserveNumericKeys = false)
 
 /**
  * Computes the size of a collection
- * @param  array  $collection     collection
+ *
+ * @param  array   $collection     collection
  * @param  boolean $countRecursive count or not to count recursively
+ *
  * @return int                  number of elements in a collection
  * @author Rod Elias <rod@wgo.com.br>
  */
