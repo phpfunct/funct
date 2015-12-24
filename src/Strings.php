@@ -742,7 +742,9 @@ function truncate($input, $length, $chars = '…')
         $splits = preg_split('/([\s\n\r]+)/u', $input, null, PREG_SPLIT_DELIM_CAPTURE);
 
         $splits_length = 0;
-        for ($last_split = 0; $last_split < count($splits); ++$last_split) {
+        $splits_count = count($splits);
+
+        for ($last_split = 0; $last_split < $splits_count; ++$last_split) {
             $splits_length += strlen($splits[$last_split]);
             if ($splits_length > $length) {
                 break;
@@ -783,4 +785,3 @@ function upperCaseFirst($input)
 {
     return ucfirst($input);
 }
-
