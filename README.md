@@ -69,6 +69,7 @@ Funct\firstValueNotEmpty($a, $b, $c)
         * [some](#somecollection-callable-callback--null)
         * [sortBy](#sortbycollection-sortby-sortfunction--asort)
         * [tail](#tailcollection-from--1)
+        * [toJson](#tojsoncollection)
         * [union](#unioncollectionfirst-collectionsecond)
         * [unzip](#unzipcollection)
         * [where](#wherecollection-value)
@@ -630,11 +631,17 @@ Returns a sorted array by callback function which should return value to which s
 Collection\sortBy([1, 2, 3, 4, 5, 6], function ($num) { return sin($num); }); // => [5, 4, 6, 3, 1, 2]
 ```
 
-
 ### tail($collection, $from = 1)
 
 Alias of rest($collection, $from = 1)
 
+### toJson($collection)
+
+Returns the JSON representation of a collection
+
+```PHP
+Collection\toJson(['a' => 1, 'b' => 2, 'c' => 3]); // {"a":1,"b":2,"c":3}
+```
 
 ### union($collectionFirst, $collectionSecond)
 

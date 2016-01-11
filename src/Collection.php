@@ -565,7 +565,6 @@ function sortBy($collection, $sortBy, $sortFunction = 'asort')
     return $result;
 }
 
-
 /**
  * @see    collection_rest
  *
@@ -580,6 +579,16 @@ function tail($collection, $from = 1)
     return rest($collection, $from);
 }
 
+/**
+ * Returns the JSON representation of a collection
+ * @param  array $collection
+ * @return string string containing the JSON representation of $collection
+ * @author Rod Elias <rod@wgo.com.br>
+ */
+function toJson($collection)
+{
+    return json_encode($collection);
+}
 
 /**
  * Computes the union of the passed-in arrays: the list of unique items, in order, that are present in one or more of
