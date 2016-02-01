@@ -32,3 +32,22 @@ function toArray($objects, $valueMethod, $keyMethod = null)
 
     return $results;
 }
+
+/**
+ * Assign value to object from array if key exists
+ *
+ * @param object $object
+ * @param string $property
+ * @param array  $array
+ * @param string $key
+ *
+ * @return array
+ *
+ * @author   Aurimas Niekis <aurimas@niekis.lt>
+ */
+function assignIfIsset($object, $property, $array, $key)
+{
+    if (array_key_exists($key, $array)) {
+        $object->$property = $array[$key];
+    }
+}

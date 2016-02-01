@@ -120,6 +120,7 @@ Funct\firstValueNotEmpty($a, $b, $c)
         * [ifNotEmpty](#ifnotemptycallable-callable-var)
     * [Object](#object)
         * [toArray](#toarrayobjects-valuemethod-keymethod--null)
+        * [assignIfIsset](#assignifissetobject-property-array-key)
 * [Testing](#testing)
 * [Contributing](#contributing)
 * [License](#license)
@@ -1124,6 +1125,16 @@ Creates array from objects using valueMethod as value and with/without keyMethod
 
 ```PHP
 Object\toArray($objects, 'getValue', 'getkey'); // => ['key' => 'value']
+```
+
+### assignIfIsset($object, $property, $array, $key)
+
+Assign value to object from array if key exists
+
+```PHP
+$array = ['bar' => 'foobar'];
+
+Object\assignIfIsset($object, 'foo', $array, 'bar'); // => $object->foo = 'foobar'
 ```
 
 ## Testing
