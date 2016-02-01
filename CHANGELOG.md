@@ -4,6 +4,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [1.3.0] - 2016-02-01
+### Added
+- Collection\toJson from [chapeupreto]
+- Object\assignIfIsset from [gcds]
+
+### Fixed
+- Copyright years from [gcds]
+
 ## [1.2.0] - 2015-12-24
 ### Added
 - Collection\size from [chapeupreto]
@@ -43,7 +51,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 [chapeupreto]: https://github.com/chapeupreto
 
 
-[Unreleased]: https://github.com/phpfunct/funct/compare/1.2.0...HEAD
+[Unreleased]: https://github.com/phpfunct/funct/compare/1.3.0...HEAD
+[1.3.0]: https://github.com/phpfunct/funct/compare/1.2.0...1.3.0
 [1.2.0]: https://github.com/phpfunct/funct/compare/1.1.0...1.2.0
 [1.1.0]: https://github.com/phpfunct/funct/compare/1.0.0...1.1.0
 [1.0.0]: https://github.com/phpfunct/funct/compare/0.2.0...1.0.0
