@@ -732,6 +732,20 @@ function toSentenceSerial($array, $delimiter = ', ', $lastDelimiter = ' and ')
 
 
 /**
+ * makes a string uppercase
+ * @param  string  $input the input string
+ * @param  boolean $mb    to use or not to use multibyte character feature
+ * @return string         uppercased string
+ *
+ * @author Rod Elias <rod@wgo.com.br>
+ */
+function toUpper($input, $mb = false)
+{
+    return $mb ? mb_strtoupper($input, mb_detect_encoding($input, 'auto')) : strtoupper($input);
+}
+
+
+/**
  * Truncate string accounting for word placement and character count
  *
  * @param  string $input
