@@ -110,6 +110,7 @@ Funct\firstValueNotEmpty($a, $b, $c)
         * [stripPunctuation](#strippunctuationstring)
         * [times](#timesinput-n)
         * [titleize](#tosentencearray-delimiter----lastdelimiter---and-)
+        * [toLower](#tolowerinput-mb--false)
         * [toSentenceSerial](#tosentenceserialarray-delimiter----lastdelimiter--and-)
         * [truncate](#truncateinput-length-chars--)
         * [underscore](#underscorestring)
@@ -1046,6 +1047,14 @@ Join an array into a human readable sentence
 ```PHP
 Strings\toSentence(["A", "B", "C"]); // => "A, B and C";
 Strings\toSentence(["A", "B", "C"], ", ", " ir "); // => "A, B ir C";
+```
+
+### toLower($input, $mb = false)
+
+Makes a string lowercase;
+
+```PHP
+Strings\toLower('ROD ELIAS'); // rod elias
 ```
 
 ### toSentenceSerial($array, $delimiter = ', ', $lastDelimiter = 'and ')
