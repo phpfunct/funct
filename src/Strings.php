@@ -689,6 +689,16 @@ function titleize($string, array $ignore = [])
     );
 }
 
+/**
+ * Makes a string lowercase
+ * @param  string  $input the input string
+ * @param  boolean $mb    to use or not to use multibyte character feature
+ * @return string         lowercased string
+ */
+function toLower($input, $mb = false)
+{
+    return $mb ? mb_strtolower($input, mb_detect_encoding($input, 'auto')) : strtolower($input);
+}
 
 /**
  * Join an array into a human readable sentence
@@ -706,7 +716,6 @@ function toSentence($array, $delimiter = ', ', $lastDelimiter = ' and ')
 
     return implode($delimiter, $array) . $lastDelimiter . $lastWord;
 }
-
 
 /**
  * The same as string_to_sentence, but adjusts delimeters to use Serial comma)
