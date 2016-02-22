@@ -644,6 +644,20 @@ function stripPunctuation($string)
     return preg_replace('/[^\w\s]|_/', '', $string);
 }
 
+/**
+ * Makes a case swapped version of the string
+ * @param  string  $string the input string
+ * @param  boolean $mb     to use or not to use multibyte character feature
+ * @return string          case swapped version of the input string
+ *
+ * @author Rod Elias <rod@wgo.com.br>
+ */
+function swapCase($string, $mb = false)
+{
+    return array_reduce(str_split($string), function($carry, $item) use ($mb) {
+        return $carry .= isLower($item, $mb) ? toUpper($item, $mb) : toLower($item, $mb);
+    }, '');
+}
 
 /**
  * Repeat the string n times
@@ -694,6 +708,8 @@ function titleize($string, array $ignore = [])
  * @param  string  $input the input string
  * @param  boolean $mb    to use or not to use multibyte character feature
  * @return string         lowercased string
+ *
+ * @author Rod Elias <rod@wgo.com.br>
  */
 function toLower($input, $mb = false)
 {
