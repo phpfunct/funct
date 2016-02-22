@@ -108,6 +108,7 @@ Funct\firstValueNotEmpty($a, $b, $c)
         * [startsWith](#startswithinput-substring)
         * [strip](#stripstring-string1)
         * [stripPunctuation](#strippunctuationstring)
+        * [swapCase](#swapcasestring-mb--false)
         * [times](#timesinput-n)
         * [titleize](#tosentencearray-delimiter----lastdelimiter---and-)
         * [toLower](#tolowerinput-mb--false)
@@ -1022,6 +1023,14 @@ Strip all of the punctuation
 
 ```PHP
 Strings\stripPunctuation('My, st[ring] *full* of %punct)'); // => 'My string full of punct'
+```
+
+### swapCase($string, $mb = false)
+
+Returns a case swapped version of the string
+
+```PHP
+Strings\swapCase('RoD eLIas'); // rOd EliAS
 ```
 
 ### times($input, $n)
