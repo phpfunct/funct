@@ -112,6 +112,7 @@ Funct\firstValueNotEmpty($a, $b, $c)
         * [titleize](#tosentencearray-delimiter----lastdelimiter---and-)
         * [toLower](#tolowerinput-mb--false)
         * [toSentenceSerial](#tosentenceserialarray-delimiter----lastdelimiter--and-)
+        * [toUpper](#toupperinput-mb--false)
         * [truncate](#truncateinput-length-chars--)
         * [underscore](#underscorestring)
         * [upperCaseFirst](#uppercasefirstinput)
@@ -1065,6 +1066,14 @@ The same as string_to_sentence, but adjusts delimeters to use Serial comma)
 Strings\toSentenceSerial(["A", "B"]); // => "A and B"
 Strings\toSentenceSerial(["A", "B", "C"]); // => "A, B, and C"
 Strings\toSentenceSerial(["A", "B", "C"], ", ", " unt "); // => "jQuery, Mootools, unt Prototype"
+```
+
+### toUpper($input, $mb = false)
+
+Makes a string uppercase;
+
+```PHP
+Strings\toUpper('rod elias'); // ROD ELIAS
 ```
 
 ### truncate($input, $length, $chars = '…')
