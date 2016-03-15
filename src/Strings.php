@@ -262,6 +262,7 @@ function isNumeric($input) {
  * @param  string  $input
  *
  * @return boolean
+ * @author Enad Heljhum
  *
  */
 function isHexadecimal($input) {
@@ -731,4 +732,17 @@ function underscore($string) {
  */
 function upperCaseFirst($input) {
 	return ucfirst($input);
+}
+
+/**
+ * Return the value of ASCII character of a string
+ *
+ * @param string $input
+ *
+ * @return string
+ *
+ * @author Enad Heljhum
+ */
+function returnCharASCII($input) {
+	return ord($input);
 }
