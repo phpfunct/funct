@@ -153,3 +153,19 @@ function true($value)
 {
     return true === $value;
 }
+
+
+/**
+ * Destroy the value or resource from the database
+ * 
+ * @param mixed $value
+ * 
+ * @return bool
+ * @author Enad, Heljhum
+ */
+ function destroyValue($value) 
+ {
+    if(isset($value)) {
+        return unset($value)
+    }
+ }
