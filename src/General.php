@@ -17,6 +17,7 @@ function arrayKeyNotExists($key, array $array)
     return false === array_key_exists($key, $array);
 }
 
+
 /**
  * Returns true if value is false
  *
@@ -29,6 +30,7 @@ function false($value)
 {
     return false === $value;
 }
+
 
 /**
  * Returns a first non null value from function arguments
@@ -46,6 +48,7 @@ function firstValue($valueA)
         }
     }
 }
+
 
 /**
  * Returns a first not empty value from function arguments
@@ -65,6 +68,7 @@ function firstValueNotEmpty($valueA, $valueB)
     }
 }
 
+
 /**
  * Returns true if var is not empty
  *
@@ -77,6 +81,7 @@ function notEmpty($value)
 {
     return false === empty($value);
 }
+
 
 /**
  * Checks if needle is not in array
@@ -93,6 +98,7 @@ function notInArray($needle, $haystack, $strict = null)
     return false === in_array($needle, $haystack, $strict);
 }
 
+
 /**
  * Returns true if var is not null
  *
@@ -105,6 +111,7 @@ function notNull($value)
 {
     return null !== $value;
 }
+
 
 /**
  * Returns true if value is null
@@ -119,6 +126,7 @@ function null($value)
     return null === $value;
 }
 
+
 /**
  * Generates temp file on systems temp folder with prefix
  *
@@ -132,6 +140,7 @@ function tempFile($prefix = 'php')
     return tempnam(sys_get_temp_dir(), $prefix);
 }
 
+
 /**
  * Returns true if value is true
  *
@@ -144,6 +153,7 @@ function true($value)
 {
     return true === $value;
 }
+
 
 /**
  * Returns the first param if isset or the second one or null if it doesn't
