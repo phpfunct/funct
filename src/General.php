@@ -153,3 +153,20 @@ function true($value)
 {
     return true === $value;
 }
+
+
+/**
+ * Returns the first param if isset or the second one or null if it doesn't
+ * 
+ * @param mixed $value
+ * @param mixed $default
+ * @return mixed
+ * @author Christophe Jean <cj@myjob.company>
+ */
+function ifSetOr(&$value, $default = null)
+{
+    if (isset($value)) {
+        return $value;
+    }
+    return $default;
+}

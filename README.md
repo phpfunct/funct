@@ -32,6 +32,7 @@ Funct\firstValueNotEmpty($a, $b, $c)
         * [false](#falsevalue)
         * [firstValue](#firstvaluevaluea)
         * [firstValueNotEmpty](#firstvaluenotemptyvaluea-valueb)
+        * [ifSetOr](#ifSetOr)
         * [notEmpty](#notemptyvalue)
         * [notInArray](#notinarrayneedle-haystack-strict--null)
         * [notNull](#notnullvalue)
@@ -222,6 +223,15 @@ Funct\firstValueNotEmpty('', 'foo_bar'); // => 'foo_bar'
 Funct\firstValueNotEmpty('', null, 'foo_bar'); // => 'foo_bar'
 ```
 
+### ifSetOr($value, $default)
+Return the first param if isset or the second one or null if it doesn't
+
+```PHP
+$bar = 'bar';
+Funct\ifSetOr($foo); // => 'NULL'
+Funct\ifSetOr($foo, 'foo_bar'); // => 'foo_bar'
+Funct\ifSetOr($bar, 'foo_bar'); // => 'bar' ($bar value)
+```
 
 ### notEmpty($value)
 
