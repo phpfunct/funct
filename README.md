@@ -1,4 +1,4 @@
-![Funct](http://phpfunct.io/github_logo.png)
+![Funct](http://i.imgur.com/jtKjWfv.png)
 
 A PHP library with commonly used code blocks for faster development
 
@@ -6,21 +6,14 @@ A PHP library with commonly used code blocks for faster development
 Funct\firstValueNotEmpty($a, $b, $c)
 ```
 
-[![Latest Version](https://img.shields.io/github/release/phpfunct/funct.svg?style=flat-square)]
-(https://github.com/phpfunct/funct/releases)
-[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)]
-(LICENSE)
-[![Build Status](https://img.shields.io/travis/phpfunct/funct.svg?style=flat-square)]
-(https://travis-ci.org/phpfunct/funct)
-[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/phpfunct/funct.svg?style=flat-square)]
-(https://scrutinizer-ci.com/g/phpfunct/funct)
-[![Quality Score](https://img.shields.io/scrutinizer/g/phpfunct/funct.svg?style=flat-square)]
-(https://scrutinizer-ci.com/g/phpfunct/funct)
-[![Total Downloads](https://img.shields.io/packagist/dt/funct/funct.svg?style=flat-square)]
-(https://packagist.org/packages/funct/funct)
+[![Latest Version](https://img.shields.io/github/release/phpfunct/funct.svg?style=flat-square)](https://github.com/phpfunct/funct/releases)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
+[![Build Status](https://img.shields.io/travis/phpfunct/funct.svg?style=flat-square)](https://travis-ci.org/phpfunct/funct)
+[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/phpfunct/funct.svg?style=flat-square)](https://scrutinizer-ci.com/g/phpfunct/funct)
+[![Quality Score](https://img.shields.io/scrutinizer/g/phpfunct/funct.svg?style=flat-square)](https://scrutinizer-ci.com/g/phpfunct/funct)
+[![Total Downloads](https://img.shields.io/packagist/dt/funct/funct.svg?style=flat-square)](https://packagist.org/packages/funct/funct)
 
-[![Email](https://img.shields.io/badge/email-aurimas@niekis.lt-blue.svg?style=flat-square)]
-(mailto:aurimas@niekis.lt)
+[![Email](https://img.shields.io/badge/email-aurimas@niekis.lt-blue.svg?style=flat-square)](mailto:aurimas@niekis.lt)
 
 
 * [Requirements](#requirements)
