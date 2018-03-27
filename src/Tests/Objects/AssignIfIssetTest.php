@@ -2,7 +2,7 @@
 
 namespace Funct\Tests\Objects;
 
-use Funct\Object;
+use Funct\Object as Obj;
 
 /**
  * Class AssignIfIssetTest
@@ -18,13 +18,13 @@ class AssignIfIssetTest extends \PHPUnit_Framework_TestCase
         $object = new \stdClass();
         $array = [];
 
-        Object\assignIfIsset($object, 'foo', $array, 'bar');
+        Obj\assignIfIsset($object, 'foo', $array, 'bar');
 
         $this->assertObjectNotHasAttribute('foo', $object);
 
         $array = ['bar' => 'foobar'];
 
-        Object\assignIfIsset($object, 'foo', $array, 'bar');
+        Obj\assignIfIsset($object, 'foo', $array, 'bar');
         $this->assertObjectHasAttribute('foo', $object);
         $this->assertSame('foobar', $object->foo);
     }
