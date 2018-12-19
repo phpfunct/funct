@@ -2,8 +2,8 @@
 
 namespace Funct\Tests\Objects;
 
-use Funct\Object;
-use Funct\Tests\Fixtures\SampleObject;;
+use Funct\Object as Obj;
+use Funct\Tests\Fixtures\SampleObject;
 
 /**
  * Class ObjectsToArrayTest
@@ -32,7 +32,7 @@ class ObjectsToArrayTest extends \PHPUnit_Framework_TestCase
 
         $expected = ['bar', 'bar', 'bar', 'bar'];
 
-        $this->assertEquals($expected, Object\toArray($objects, 'getFoo'));
+        $this->assertEquals($expected, Obj\toArray($objects, 'getFoo'));
 
         $expected = [
             'foo1' => 'bar',
@@ -41,6 +41,6 @@ class ObjectsToArrayTest extends \PHPUnit_Framework_TestCase
             'foo4' => 'bar',
         ];
 
-        $this->assertEquals($expected, Object\toArray($objects, 'getFoo', 'getBar'));
+        $this->assertEquals($expected, Obj\toArray($objects, 'getFoo', 'getBar'));
     }
 }

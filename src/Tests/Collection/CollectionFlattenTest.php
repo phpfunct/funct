@@ -44,6 +44,11 @@ class CollectionFlattenTest extends \PHPUnit_Framework_TestCase
             ['a', 'b', ['c', ['d']]],
         ];
 
+        $out[] = [
+            [['a'], 'b', ['c', 'd'], ['e', ['j']]],
+            ['a', 'b', 'c', 'd', 'e', ['j']],
+        ];
+
         return $out;
     }
 
