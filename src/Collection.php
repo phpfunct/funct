@@ -131,7 +131,7 @@ function flatten($collection, $depth = 1)
 
     foreach ($collection as $value) {
         if (is_array($value) && $depth > 0) {
-            $result = array_merge($result, flatten($value, --$depth));
+            $result = array_merge($result, flatten($value, $depth - 1));
         } else {
             $result[] = $value;
         }
