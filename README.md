@@ -17,15 +17,15 @@ Funct\firstValueNotEmpty($a, $b, $c)
 
 
 * [Requirements](#requirements)
-* [Installation](#install)
+* [Installation](#installation)
 * [Usage](#usage)
-* [Library](#library)
+* [Library](#general)
     * [General](#general)
         * [arrayKeyNotExists](#arraykeynotexistskey-array-array)
         * [false](#falsevalue)
         * [firstValue](#firstvaluevaluea)
         * [firstValueNotEmpty](#firstvaluenotemptyvaluea-valueb)
-        * [ifSetOr](#ifSetOr)
+        * [ifSetOr](#ifsetorvalue-default)
         * [notEmpty](#notemptyvalue)
         * [notInArray](#notinarrayneedle-haystack-strict--null)
         * [notNull](#notnullvalue)
@@ -105,14 +105,15 @@ Funct\firstValueNotEmpty($a, $b, $c)
         * [swapCase](#swapcasestring-mb--false)
         * [times](#timesinput-n)
         * [titleize](#tosentencearray-delimiter----lastdelimiter---and-)
-        * [toLower](#tolowerinput-mb--false)
+        * [toSentence](#tosentencearray-delimiter----lastdelimiter---and-)
         * [toSentenceSerial](#tosentenceserialarray-delimiter----lastdelimiter--and-)
+        * [toLower](#tolowerinput-mb--false)
         * [toUpper](#toupperinput-mb--false)
         * [truncate](#truncateinput-length-chars--)
         * [underscore](#underscorestring)
         * [upperCaseFirst](#uppercasefirstinput)
     * [Invoke](#invoke)
-        * [ifCondition](#ifissetcallable-callable-values-key)
+        * [ifCondition](#ifconditioncallable-callable-methodarguments---condition)
         * [ifIsset](#ifissetcallable-callable-values-key)
         * [ifNotEmpty](#ifnotemptycallable-callable-var)
     * [Object](#object)
@@ -1062,14 +1063,6 @@ Strings\toSentence(["A", "B", "C"]); // => "A, B and C";
 Strings\toSentence(["A", "B", "C"], ", ", " ir "); // => "A, B ir C";
 ```
 
-### toLower($input, $mb = false)
-
-Makes a string lowercase;
-
-```PHP
-Strings\toLower('ROD ELIAS'); // rod elias
-```
-
 ### toSentenceSerial($array, $delimiter = ', ', $lastDelimiter = 'and ')
 
 The same as string_to_sentence, but adjusts delimeters to use Serial comma)
@@ -1078,6 +1071,14 @@ The same as string_to_sentence, but adjusts delimeters to use Serial comma)
 Strings\toSentenceSerial(["A", "B"]); // => "A and B"
 Strings\toSentenceSerial(["A", "B", "C"]); // => "A, B, and C"
 Strings\toSentenceSerial(["A", "B", "C"], ", ", " unt "); // => "jQuery, Mootools, unt Prototype"
+```
+
+### toLower($input, $mb = false)
+
+Makes a string lowercase;
+
+```PHP
+Strings\toLower('ROD ELIAS'); // rod elias
 ```
 
 ### toUpper($input, $mb = false)
