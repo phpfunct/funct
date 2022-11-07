@@ -14,7 +14,7 @@ use ArrayAccess;
  *
  * @return mixed
  */
-function ifCondition(callable $callable, $methodArguments = [], $condition)
+function ifCondition(callable $callable, $methodArguments = [], $condition = false)
 {
     if (true === $condition) {
         return call_user_func_array(
