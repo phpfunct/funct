@@ -730,8 +730,8 @@ Camelizes string
 ```PHP
 Strings\camelize('data_rate'); //'dataRate'
 Strings\camelize('background-color'); //'backgroundColor'
-Strings\camelize('-moz-something'); //'MozSomething'
-Strings\camelize('_car_speed_'); //'CarSpeed'
+Strings\camelize('-moz-something'); //'mozSomething'
+Strings\camelize('_car_speed_'); //'carSpeed'
 Strings\camelize('yes_we_can'); //'yesWeCan'Strings\camelize(
 ```
 
