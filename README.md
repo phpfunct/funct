@@ -486,7 +486,7 @@ Returns the maximum value in collection using callback method
 
 
 ```PHP
-Collection\minValue(
+Collection\maxValue(
     [
         10 => [
             'title' => 'a',
