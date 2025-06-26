@@ -21,7 +21,7 @@ class StringsIncludesTest extends \PHPUnit_Framework_TestCase
         $out[] = ['foo bar', 'foo', true];
         $out[] = ['foo&%$bar@;/', 'bar', true];
         $out[] = ['foo BAR', 'bar', false];
-        
+
         return $out;
     }
 

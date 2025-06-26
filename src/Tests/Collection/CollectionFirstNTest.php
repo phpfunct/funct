@@ -12,10 +12,9 @@ use Funct\Collection;
  */
 class CollectionFirstNTest extends \PHPUnit_Framework_TestCase
 {
-
     public function testFirst()
     {
-        $array  = range(1,9);
+        $array  = range(1, 9);
 
         $result = Collection\firstN($array, 3);
         $this->assertEquals([1, 2, 3], $result);

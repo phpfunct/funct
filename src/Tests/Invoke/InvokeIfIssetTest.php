@@ -3,7 +3,7 @@
 namespace Funct\Tests\Invoke;
 
 use Funct\Invoke;
-use Funct\Tests\Fixtures\SampleObject;;
+use Funct\Tests\Fixtures\SampleObject;
 
 /**
  * Class InvokeIfIssetTest

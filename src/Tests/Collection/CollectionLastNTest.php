@@ -12,10 +12,9 @@ use Funct\Collection;
  */
 class CollectionLastNTest extends \PHPUnit_Framework_TestCase
 {
-
     public function testLast()
     {
-        $array  = range(1,9);
+        $array  = range(1, 9);
 
         $result = Collection\lastN($array, 3);
         $this->assertEquals([7, 8, 9], $result);

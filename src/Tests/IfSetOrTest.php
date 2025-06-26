@@ -17,7 +17,7 @@ class IfSetOrTest extends \PHPUnit_Framework_TestCase
         $this->assertNull(Funct\ifSetOr($foo));
         $this->assertEquals('bar', Funct\ifSetOr($foo2, 'bar'));
     }
-    
+
     public function testIsSet()
     {
         $foo = 'foo';

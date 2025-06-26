@@ -107,7 +107,6 @@ function chompLeft($input, $prefix)
 function chompRight($input, $suffix)
 {
     if (endsWith($input, $suffix)) {
-
         return mb_substr($input, 0, mb_strlen($input) - mb_strlen($suffix));
     }
 
@@ -654,7 +653,7 @@ function stripPunctuation($string)
  */
 function swapCase($string, $mb = false)
 {
-    return array_reduce(str_split($string), function($carry, $item) use ($mb) {
+    return array_reduce(str_split($string), function ($carry, $item) use ($mb) {
         return $carry .= isLower($item, $mb) ? toUpper($item, $mb) : toLower($item, $mb);
     }, '');
 }

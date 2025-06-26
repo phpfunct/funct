@@ -157,7 +157,7 @@ function true($value)
 
 /**
  * Returns the first param if isset or the second one or null if it doesn't
- * 
+ *
  * @param mixed $value
  * @param mixed $default
  * @return mixed

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<ruleset name="PHPFunct">
+    <description>PHPFunct ruleset</description>
+
+    <!-- Include PSR12 standard -->
+    <rule ref="PSR12" />
+
+    <!-- Disable line length exceeding 120 characters -->
+    <rule ref="Generic.Files.LineLength">
+        <exclude name="Generic.Files.LineLength.TooLong" />
+    </rule>
+</ruleset>

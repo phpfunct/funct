@@ -2,7 +2,7 @@
 
 namespace Funct\Tests\Strings;
 
-use Funct\Strings;;
+use Funct\Strings;
 
 /**
  * Class StringsChompLeftTest

@@ -12,7 +12,6 @@ use Funct\Object as Obj;
  */
 class AssignIfIssetTest extends \PHPUnit_Framework_TestCase
 {
-
     public function testMethod()
     {
         $object = new \stdClass();

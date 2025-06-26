@@ -12,4 +12,4 @@ tools:
         timeout: 600
     php_code_sniffer:
         config:
-            standard: "PSR2"
+            standard: "PSR12"
