@@ -52,11 +52,11 @@ function countBy($collection, $callback)
  * @author Aurimas Niekis <aurimas@niekis.lt>
  *
  * @param array    $collection
- * @param callable $callback
+ * @param callable|null $callback
  *
  * @return bool
  */
-function every($collection, callable $callback = null)
+function every($collection, ?callable $callback = null)
 {
     if (null === $callback) {
         $callback = function ($item) use ($callback) {
@@ -514,11 +514,11 @@ function size($collection, $countRecursive = false)
  * @author Aurimas Niekis <aurimas@niekis.lt>
  *
  * @param array    $collection
- * @param callable $callback
+ * @param callable|null $callback
  *
  * @return bool
  */
-function some($collection, callable $callback = null)
+function some($collection, ?callable $callback = null)
 {
     if (null === $callback) {
         $callback = function ($item) use ($callback) {
